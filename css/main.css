@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: rgb(244, 166, 166);
   margin: 0;
   padding: 0;
 }
@@ -12,6 +12,24 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+}
+
+a:focus {
+  outline: 2px solid black;
+}
+
+.site-header {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+p {
+  margin-right: 350px;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 1rem;
 }
 
 .container {
@@ -35,6 +53,10 @@ img {
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: rgb(128, 34, 34);
+  color: white;
 }
 
 .main-nav ul li a {
@@ -42,6 +64,28 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+}
+
+.main-nav ul li a:hover{
+  text-decoration: underline;
+  color: rgb(244, 166, 166);
+}
+
+.skip-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  padding-bottom: 5px;
+}
+
+.skip-links a {
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: 400;
+  color: rgb(128, 34, 34);
+  border: 2px solid rgb(128, 34, 34);
+  padding: 4px;
 }
 
 form input,
@@ -64,6 +108,7 @@ form button {
   border: 2px solid black;
   padding: 1rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .site-footer {
