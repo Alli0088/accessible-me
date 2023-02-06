@@ -14,17 +14,19 @@
 <body id="nav">
   <div class="container">
     <div class="site-header">
-      <h1>Jam Box Studios</h1>
+      <h1 role="heading">Jam Box Studios</h1>
       <ul class="skip-links">
         <li><a href="#contact">CONTACT US</a></li>
       </ul>
       <div class="main-nav">
+        <nav role="navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a href="#" aria-label="home button">Home</a></li>
+          <li><a href="#" aria-label="products button">Products</a></li>
+          <li><a href="#" aria-label="reservation button">Reservation</a></li>
+          <li><a href="#" aria-label="studio button">Studio</a></li>
         </ul>
+      </nav>
       </div>
       <img alt src="https://placekitten.com/1200/900" class="banner">
     </div>
@@ -34,7 +36,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
 
       <div class="owner">
-        <h1>Meet the owner</h1>
+        <h1 role="complementary">Meet the owner</h1>
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
@@ -51,7 +53,7 @@
       </div>
       <div class="contact-section">
         <h1>Contact Us</h1>
-        <form action="thanks.html">
+        <form role="form" action="thanks.html">
           <label for="name" id="contact">Name</label>
           <input type="text" id="name" name="name" placeholder="Full Name">
           <label for="email">Email</label>
