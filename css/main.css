@@ -71,6 +71,10 @@ img {
   color: rgb(244, 166, 166);
 }
 
+.main-nav a:hover{
+  outline: 4px rgb(244, 166, 166);
+}
+
 .skip-links {
   list-style: none;
   padding: 0;

@@ -14,21 +14,21 @@
 <body id="nav">
   <div class="container">
     <div class="site-header">
-      <h1 role="heading">Jam Box Studios</h1>
+      <h1>Jam Box Studios</h1>
       <ul class="skip-links">
         <li><a href="#contact">CONTACT US</a></li>
       </ul>
       <div class="main-nav">
-        <nav role="navigation">
+        <nav>
         <ul>
-          <li><a href="#" aria-label="home button">Home</a></li>
-          <li><a href="#" aria-label="products button">Products</a></li>
-          <li><a href="#" aria-label="reservation button">Reservation</a></li>
-          <li><a href="#" aria-label="studio button">Studio</a></li>
+          <li><a href="#" aria-label="go to home page">Home</a></li>
+          <li><a href="#" aria-label="see our products">Products</a></li>
+          <li><a href="#" aria-label="make a reservation">Reservation</a></li>
+          <li><a href="#" aria-label="see our studio">Studio</a></li>
         </ul>
       </nav>
       </div>
-      <img alt src="https://placekitten.com/1200/900" class="banner">
+      <img alt src="https://placekitten.com/1200/900" aria-details="Kittenimage" class="banner">
     </div>
     <div class="main-content">
       <h1>Welcome to Jam Box</h1>
@@ -36,12 +36,12 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
 
       <div class="owner">
-        <h1 role="complementary">Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <h1>Meet the owner</h1>
+        <ul itemscope itemtype="https://en.wikipedia.org/wiki/John_Doe">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobtitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="phonenumber">Phone: 613-000-0000</li>
         </ul>
         <h1>Address</h1>
         <p>
@@ -53,7 +53,7 @@
       </div>
       <div class="contact-section">
         <h1>Contact Us</h1>
-        <form role="form" action="thanks.html">
+        <form action="thanks.html">
           <label for="name" id="contact">Name</label>
           <input type="text" id="name" name="name" placeholder="Full Name">
           <label for="email">Email</label>
@@ -62,7 +62,7 @@
           <input type="text" id="subject" name="subject" placeholder="Subject">
           <b>Your Message</b>
           <textarea></textarea>
-          <button type="submit">Send</button>
+          <button disabled aria-disabled="true" type="submit">Send</button>
         </form>
       </div>
     </div>
@@ -70,7 +70,9 @@
       <li><a href="#nav">BACK TO NAV</a></li>
     </ul>
     <div class="site-footer">
+      <footer>
       &copy; 2021 Jam Box Studios
+    </footer>
     </div>
   </div>
 </body>
